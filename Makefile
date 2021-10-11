@@ -6,7 +6,7 @@ VAL = valgrind --tool=memcheck --log-file=vallog --leak-check=full --verbose
 SRCS = main.c hw19.c
 OBJS = $(SRCS:%.c=%.o)
 
-hw17: $(OBJS)
+hw19: $(OBJS)
 	$(GCC) $(OBJS) -o hw19
 
 .c.o: 
